@@ -1,0 +1,22 @@
+﻿@{
+
+
+}
+
+
+<h2>My Cheese</h2>
+
+@if (ViewBag.cheeses.Count == 0)
+{
+    <p>No cheeses yet!</p>
+}
+
+<ul>
+    @foreach (KeyValuePair<string, string> cheese in ViewBag.cheeses)
+    {
+
+        <li>@cheese.Key : @cheese.Value</li>
+
+
+    }
+</ul>
