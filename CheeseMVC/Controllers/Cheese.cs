@@ -4,6 +4,7 @@ namespace CheeseMVC.Controllers
 {
     public class Cheese
     {
+        public int Id;
         public string name;
         public string description;
 
