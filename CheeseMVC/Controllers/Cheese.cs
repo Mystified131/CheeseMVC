@@ -4,15 +4,11 @@ namespace CheeseMVC.Controllers
 {
     public class Cheese
     {
-        public int Id;
-        public string name;
-        public string description;
+        public int Id { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
 
-        public Cheese(string name, string description)
-        {
-            this.name = name;
-            this.description = description;
     }
-   
-    }
+
+
 }

@@ -13,7 +13,6 @@ namespace CheeseMVC.Controllers
 
         public IActionResult Index()
         {
-
             ViewBag.cheeses = Cheeses;
 
             return View();
