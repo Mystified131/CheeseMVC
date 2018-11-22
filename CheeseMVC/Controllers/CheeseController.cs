@@ -34,5 +34,23 @@ namespace CheeseMVC.Controllers
 
             return Redirect("/Cheese");
         }
+
+
+        [HttpGet]
+        [Route("/Cheese/Remove")]
+        public IActionResult Remove()
+        {
+            ViewBag.cheeses = Cheeses;
+            return View("Remove");
+        }
+
+        [HttpPost]
+        [Route("/Cheese/Remove")]
+        public IActionResult RemoveCheese(string Cheesename)
+        {
+            Cheeses.Remove(Cheesename);
+            ViewBag.cheeses = Cheeses;
+            return Redirect("/Cheese");
+        }
     }
 }
